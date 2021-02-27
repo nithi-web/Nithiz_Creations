@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .gallerycontainer {
+            background-image: url("images/gallerybackground.jpg");
+            background-size: 900px;
+        }
+
+        .photogal {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .galleryimageheading {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: red;
+            font-size: 38px;
+        }
+
+        img:hover {
+            filter: grayscale(100%);
+            transform: scale(1.1);
+        }
+
+        .floatingtextanim {
+            animation-duration: 20s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+            background-image: url("images/exploringimagebackground.jpg");
+
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="navbar-header" id="color">
+                <img class="navbar-brand" src="images/navicon2.jpg">
+            </div>
+
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="index.html#sectionabout">About us</a>
+                <a href="index.html#contactme">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container galleryheadingclass">
+        <div class="galleryheadinganimation">
+            <h1 class="photogal">Photo Gallery<img src="imagesforGallery/gallheadicon.jpg" height="40" width="52"></h1>
+        </div>
+    </div>
+
+
+
+    <div class="container largestflower">
+        <img src="imagesforGallery/Rafflesia.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Helloo iam rafflesia flower..iam the biggest flower in the world!!</div>
+        </div>
+    </div>
+
+    <div class="container floatingtextanim">
+        <h3 class="galleryfloatinganimation"><b>“Flowers always make people better, happier and more helpful; they are
+                sunshine, food and medicine for the
+                soul.”</b></h3>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <h2 class="galleryimageheading">Aconite</h2>
+                    <a href="imagesforGallery/aconite.jpg" data-lightbox="form-group"><img class="img-fluid popup"
+                            src="imagesforGallery/aconite.jpg" height="200" width="300"></a>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <h2 class="galleryimageheading">Acacia</h2>
+                    <a href="imagesforGallery/acacia.jpg" data-lightbox="form-group"><img class="img-fluid popup"
+                            src="imagesforGallery/acacia.jpg" height="200" width="300"></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <h2 class="galleryimageheading">Abutilon</h2>
+                    <a href="imagesforGallery/abutilon.jpg" data-lightbox="form-group"><img class="img-fluid popup"
+                            src="imagesforGallery/abutilon.jpg" height="200" width="300"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <h2 class="galleryimageheading">Ballota</h2>
+
+                    <a href="imagesforGallery2/ballota.jpg" data-lightbox="form-group"><img class="img-fluid popup"
+                            src="imagesforGallery2/ballota.jpg" height="200" width="300"></a>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <h2 class="galleryimageheading">Buttercup</h2>
+                    <a href="imagesforGallery2/buttercup.jpg" data-lightbox="form-group"><img class="img-fluid popup"
+                            src="imagesforGallery2/buttercup.jpg" .jpg" height="200" width="300"></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <h2 class="galleryimageheading">Duchiris</h2>
+                    <a href="imagesforGallery2/duchiris.jpg" data-lightbox="form-group"><img class="img-fluid popup"
+                            src="imagesforGallery2/duchiris.jpg" height="200" width="300"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <h2 class="galleryimageheading">Agapanthus</h2>
+
+                    <a href="imagesforGallery/agapanthus.jpg" data-lightbox="form-group"><img class="img-fluid popup"
+                            src="imagesforGallery/agapanthus.jpg" height="200" width="300"></a>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <h2 class="galleryimageheading">Cannalilly</h2>
+                    <a href="imagesforGallery2/cannalilly.jpg" data-lightbox="form-group"><img class="img-fluid popup"
+                            src="imagesforGallery2/cannalilly.jpg" .jpg" height="200" width="300"></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <h2 class="galleryimageheading">Diascia</h2>
+                    <a href="imagesforGallery2/diascia.jpg" data-lightbox="form-group"><img class="img-fluid popup"
+                            src="imagesforGallery2/diascia.jpg" height="200" width="300"></a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <hr>
+    <footer class="bg-light text-center text-lg-start">
+
+        <div class="text-center p-3" style="background-color: rgba(46, 126, 0, 0.2)">
+            <p>Copyright © 2021 Middlemist. All rights reserved.
+
+            </p><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#"
+                class="fa fa-linkedin"></a><a href="#" class="fa fa-instagram"></a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nithizz Blog</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="js.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="navbar-header" id="color">
+        <img class="navbar-brand" src="images/navicon2.jpg">
+      </div>
+
+
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#sectionabout">About us</a>
+        <a href="#contactme">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="NavFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+    </div>
+  </nav>
+  <hr>
+
+  <div class="container heading1">
+    <h1 class="welcomeh1">Middlemist Red blogs!</h1>
+    <h3 class="helen">“Love is like a beautiful flower which I may not touch, but whose fragrance makes the garden a
+      place of delight just the same.”
+      – Helen Keller
+    </h3>
+
+  </div>
+  <hr>
+  <div class="container corous">
+    <div class="exploreworldanimation">
+      <h2 class="h1Demo">Explore The Flower World!!...<span class="tooltiptext">“Love speaks in flowers.. Truth requires
+          thorns.”</span></h2>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/sliderimg1.jpg" alt="Los Angeles" style="width:100%;">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>“Flowers… are a proud assertion that a ray of beauty out values all the utilities in the world.”</h1>
+
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/sliderimg2.jpg" alt="Chicago" style="width:100%;">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>“Every flower is a soul blossoming in nature.”</h1>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/sliderimg3.jpg" alt="New york" style="width:100%;">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>“Don’t wait for someone to bring you flowers. Plant your own garden and decorate your own soul.”</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <hr>
+  <!-- <button type="button" class="btn btn-danger subscribee">Subscribe here..</button> -->
+  <div class="container subscribebgimage">
+
+    <button type="button" class="btn btn-danger subscribee">Click here to Subscribe..!</button><br>
+    <br>
+
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Name">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Email</label>
+            <input type="text" class="form-control" id="inputEmail4" placeholder="Enter email">
+          </div>
+
+        </div>
+
+        <div class="form-group col-lg-12">
+          <input type="submit" value="Submit">
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+  <hr>
+
+  <div class="main-wrapper">
+    <div class="container">
+      <div class="view_port">
+        <div class="polling_message">
+          Read The Blog Posts
+        </div>
+        <div class="cylon_eye"></div>
+      </div>
+    </div>
+    <!-- <section>
+      <div class="container text-center">
+        <h2 class="headingblogs">Blog Posts..</h2>
+
+
+      </div>
+
+      <!--//container-->
+    <!-- </section> -->
+    <section>
+      <div class="container backgrnd">
+        <div>
+          <div>
+            <img src="imagesforblogs/blog1.jpg" class="indexpageblogimage" alt="image" height="100" width="180">
+            <div>
+              <h3 class="blogheadings">April Birth Flower + More: Daisy</h3>
+              <div><span class="date"><b>Published 2 days ago</b></span></div><br>
+
+              <p class="indexContentsblog">By the time April arrives, spring is in full bloom in most parts of the
+                country. The birthday flo<span id="dots">...</span><span id="more">wer
+                  for April is the cheerful, colorful daisy. Daisies symbolize childhood innocence, simplicity and joy,
+                  which makes them a wonderful choice to give in a spring bouquet or to grow in your garden.</span>
+              </p>
+              <button class="btn btn-info blogreadmore" onclick="myFunction()" id="myBtn">Read more</button><br><br>
+              <button type="button" class="btn btn-danger readblog" onclick="window.location.href='blog1.html'">Read the
+                blog..!</button>
+
+            </div>
+            <!--//media-body-->
+          </div>
+          <!--//media-->
+        </div>
+        <!--//item-->
+        <hr>
+        <br>
+        <div>
+          <div>
+            <img src="imagesforblogs/blog2.jpeg" class="indexpageblogimage" alt="image" height="100" width="180">
+            <div>
+              <h3 class="blogheadings">Printable Get Well Cards And Wishes For a Speedy Recovery</h3>
+              <div><span class="date"><b>Published 6 days ago</b></span></div><br>
+
+              <p class="indexContentsblog">In times of social distancing, wishing someone who’s sick a quick
+                recovery can be tricky. If they
+                tested po<span id="dots1">...</span><span id="more1">sitive for COVID-19, you won’t be doing anyone a
+                  favor by visiting your friend or family member
+                  and compromising your own health. Luckily, we live in the 21st century so you can text or call them
+                  and
+                  make them feel better with some well wishes.</span>
+              </p>
+              <button class="btn btn-info blogreadmore" onclick="myFunction2()" id="myBtn1">Read more</button><br><br>
+              <button type="button" class="btn btn-danger readblog" onclick="window.location.href='blog2.html'">Read the
+                blog..!</button>
+
+            </div>
+            <!--//media-body-->
+          </div>
+          <!--//media-->
+        </div>
+        <!--//item-->
+        <br>
+        <hr>
+        <div>
+          <div>
+            <img src="imagesforblogs/sunflower-coloring-page-hero-1.jpg" class="indexpageblogimage" image" height="100"
+              width="180">
+            <div>
+              <h3 class="blogheadings">sunflower coloring pagesFree Printable Sunflower Coloring Pages for All
+                Ages</h3>
+              <div><span class="date"><b>Published 1 month ago</b></span></div><br>
+
+              <p class="indexContentsblog">Sunflowers are the perfect pick-me-up flower. Their vibrant colors
+                brighten any space and evoke a
+                feel<span id="dots2">...</span><span id="more2">ing of carefree summer days. Besides looking great in a
+                  backyard or vase, they also make a pretty
+                  good flower to draw.</span>
+              </p>
+              <button class="btn btn-info blogreadmore" onclick="myFunction3()" id="myBtn2">Read more</button><br><br>
+              <button type="button" class="btn btn-danger readblog">Read the
+                blog..!</button>
+
+            </div>
+            <!--//media-body-->
+          </div>
+          <!--//media-->
+        </div>
+        <!--//item-->
+        <br>
+        <hr>
+        <div>
+          <div>
+            <img src="imagesforblogs/monestra.jpg" class="indexpageblogimage" alt="image" height="100" width="180">
+            <div>
+              <h3 class="blogheadings">Monstera Care Guide: Growing Information and Tips</h3>
+              <div><span class="date"><b>Published 2 months ago</b></span></div><br>
+
+
+              <p class="indexContentsblog">The monstera deliciosa is also known as the Swiss cheese plant, split
+                leaf philodendron and Mexican
+                breadfruit, among many other names. It is a hu<span id="dots2">...</span><span id="more2">ge floor plant
+                  with one of the most recognizable leaves in
+                  the design world. Its “Swiss cheese” nickname comes from the iconic splits and holes in its leaves and
+                  its “breadfruit” nickname refers to its corn-shaped fruit</span>
+              </p>
+              <button class="btn btn-info blogreadmore" id="myBtn2">Read more</button><br><br>
+              <button type="button" class="btn btn-danger readblog">Read the
+                blog..!</button>
+
+            </div>
+            <!--//media-body-->
+          </div>
+          <!--//media-->
+        </div>
+        <!--//item-->
+
+        <br>
+        <hr>
+        <div>
+          <div>
+
+            <!--//media-->
+          </div>
+          <!--//item-->
+
+
+
+
+        </div>
+    </section>
+
+
+
+  </div>
+  <!--//main-wrapper-->
+
+  <hr>
+
+  <section id="sectionabout">
+    <div class="container aboutuss">
+      <img src="images/MiddlemistFinal.jpg" height="100px" width="200px">
+      <h1 class="abouth1">"Middlemist Red is an online blogging platform that interact and deal with flowers and gardens
+        in the world. Its get started in 2016. And here users will get chance to explore the details about flowers. And
+        will recieve the notifications too.."</h1>
+    </div>
+  </section>
+
+  <hr>
+  <div class="container-fluid gardensinwrld">
+    <h1 class="models">Famous Flower Gardens In the world..</h1>
+    <div class="row">
+
+      <div class="col-sm-3">
+        <img src="images/kanazawajapan.jpg" height="200" width="350">
+        <h1><b>Kenrokuen, Kanazawa, Japan</b></h1>
+        <p>Kenrokuen in Kanazawa is considered to be one of the finest examples of Japanese gardens, built over the
+          course of 200 years starting in the mid-17th century. In fact, it is one of the Three Great Gardens of Japan,
+          along with Korakuen in Okayama and Kairakuen in Mito</p>
+
+      </div>
+
+
+      <div class="col-sm-3">
+        <img src="images/lisseNether.jpg" height="200" width="350">
+        <h1><b>Keukenhof, Lisse, Netherlands</b></h1>
+        <p>Covering nearly 80 acres, Keukenhof is one of the largest flower gardens in the world. And with all that land
+          comes a lot of bulbs—about 7 million are planted each year for a spectacular spring blossom (the garden is
+          only open between March and May). You’ll find plenty of tulips, which the country is known for.</p>
+
+
+      </div>
+      <div class="col-sm-3">
+        <img src="images/pattayathailand.jpeg" height="200" width="350">
+        <h1><b>Nong Nooch Tropical Botanical Garden, Pattaya, Thailand</b></h1>
+        <p>In 1954 Pisit and Nongnooch Tansacha purchased 600 acres of land on which they planned to build a fruit
+          plantation. But they decided to dedicate the grounds to conservation, and in 1980 they opened their tropical
+          garden to the public.</p>
+
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/versalliesfrance.jpg" height="200" width="350">
+        <h1><b> Gardens of Versailles, Versailles, France</b></h1>
+        <p>A list of top gardens would not be complete without mentioning the gardens of the Château of Versailles.
+          Covering nearly 2,000 acres, the current landscape was designed by gardener André Le Nôtre, who was
+          commissioned by Louis XIV in 1661. More than 6 million visitors stroll the gardens each year.</p>
+
+      </div>
+    </div>
+    <hr>
+
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="images/BotanicUk.jpg" height="200" width="350">
+        <h1><b> Kew Royal Botanic Gardens, Kew, United Kingdom</b></h1>
+        <p>More than just a scenic greenspace, Kew is an internationally renowned research institution, employing
+          hundreds of scientists and researchers. The gardens are home to more than 40,000 species of plants, as well as
+          dozens of historic buildings, including the Victorian-era Palm House shown here.</p>
+
+      </div>
+
+
+      <div class="col-sm-3">
+        <img src="images/botanicNewyork.jpg" height="200" width="350">
+        <h1><b>Brooklyn Botanic Gardens, New York, New York</b></h1>
+        <p>It’s not often you find a 52-acre garden in the heart of a major metropolis. But that’s exactly what you’ll
+          find in New York, thanks to the Brooklyn Botanic Garden. The garden is known for its 200 cherry trees, which
+          take center stage during a month-long blossom festival.</p>
+
+      </div>
+      <div class="col-sm-3">
+        <img src="images/marrakechMorocco.jpg" height="200" width="350">
+        <h1><b>Jardin Majorelle, Marrakech, Morocco</b></h1>
+        <p>French painter Jacques Marjorelle spent four decades crafting his beloved garden around his villa in
+          Marrakech. Noted for the luminous blue paint on its buildings, gates, pots, and more, the garden was purchased
+          by Yves Saint Laurent and Pierre Bergé in 1980.</p>
+
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/tivoliItali.jpg" height="200" width="350">
+        <h1><b>Villa d’Este, Tivoli, Italy</b></h1>
+        <p>This 16th-century villa, whose main building is also a marvel, is home to an incredible garden that has 51
+          fountains. Considering each runs on gravity alone, that’s a pretty impressive feat. The terraced landscape was
+          the inspiration for many European gardens to follow.</p>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="container" id="contactme">
+    <h3>Middlemist , 2282 Oak Street,Old Forge,New York, ZIP:13420</h3>
+    <h4>Email: fernandezgeorge@gmail.com</h4>
+    <h4>Phone : 315-369-5462</h4>
+  </div>
+
+  <hr>
+
+  <footer class="bg-light text-center text-lg-start">
+
+    <div class="text-center p-3" style="background-color: rgba(46, 126, 0, 0.2)">
+      <p>Copyright © 2021 Middlemist. All rights reserved.
+
+      </p><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#"
+        class="fa fa-linkedin"></a><a href="#" class="fa fa-instagram"></a>
+    </div>
+
+  </footer>
+  <hr>
+  <script>
+
+    $(document).ready(function () {
+      $('.form-row').hide();
+      $(".subscribee").click(function () {
+
+        $(".form-row").fadeToggle();
+
+
+      });
+    });
+
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+
+    function myFunction2() {
+      var dots1 = document.getElementById("dots1");
+      var moreText1 = document.getElementById("more1");
+      var btnText1 = document.getElementById("myBtn1");
+
+      if (dots1.style.display === "none") {
+        dots1.style.display = "inline";
+        btnText1.innerHTML = "Read more";
+        moreText1.style.display = "none";
+      } else {
+        dots1.style.display = "none";
+        btnText1.innerHTML = "Read less";
+        moreText1.style.display = "inline";
+      }
+    }
+
+    function myFunction3() {
+      var dots2 = document.getElementById("dots2");
+      var moreText2 = document.getElementById("more2");
+      var btnText2 = document.getElementById("myBtn2");
+
+      if (dots2.style.display === "none") {
+        dots2.style.display = "inline";
+        btnText2.innerHTML = "Read more";
+        moreText2.style.display = "none";
+      } else {
+        dots2.style.display = "none";
+        btnText2.innerHTML = "Read less";
+        moreText2.style.display = "inline";
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
